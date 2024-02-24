@@ -23,6 +23,8 @@ def dfs_stack(graph, start):
 graph = {'A': set(['B', 'C']), 'B': set(['A', 'D', 'E']), 'C': set(['A', 'F']), 'D': set(['B']), 'E': set(['B', 'F']), 'F': set(['C', 'E'])}
 print("DFS:")
 dfs(graph, 'A')
+print("DFS without recursion:")
+dfs_stack(graph, 'A')
 
 # Implement the breadth first search algorithm
 def bfs(graph, start):
